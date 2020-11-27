@@ -1,0 +1,12 @@
+server:
+  max-http-header-size: 131072
+  undertow:
+    io-threads: 2
+    worker-threads: 16
+    direct-buffers: true
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
